@@ -8,15 +8,6 @@ import org.mybatis.generator.api.dom.java.FullyQualifiedJavaType;
 import org.mybatis.generator.api.dom.java.Interface;
 import org.mybatis.generator.api.dom.java.TopLevelClass;
 
-/**
- * CopyRight (c) 2017 Sandu Technology Inc.<p>
- *
- * mybatis-gen
- *
- * @author songjianming@sanduspace.cn <p>
- * 2017年12月20日
- */
-
 public class DaoAnnotationsPlugin extends PluginAdapter {
 
 	public boolean validate(List<String> warnings) {

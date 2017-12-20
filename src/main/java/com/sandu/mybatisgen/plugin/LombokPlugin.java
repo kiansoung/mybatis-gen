@@ -10,18 +10,6 @@ import org.mybatis.generator.api.dom.java.TopLevelClass;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * CopyRight (c) 2017 Sandu Technology Inc.
- * <p>
- *
- * mybatis-gen
- * 
- * lombok注解插件
- * @author songjianming@sanduspace.cn
- *         <p>
- *         2017年12月19日
- */
-
 public class LombokPlugin extends PluginAdapter {
 	
 	private boolean suppressGetterMethod;

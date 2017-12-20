@@ -13,15 +13,6 @@ import java.util.Properties;
 
 import static org.mybatis.generator.internal.util.StringUtility.isTrue;
 
-/**
- * CopyRight (c) 2017 Sandu Technology Inc.
- * <p>
- * mybatis-gen
- *
- * @author songjianming@sanduspace.cn<p>
- *         2017年12月18日
- */
-
 public class DefaultCommentGenerator implements org.mybatis.generator.api.CommentGenerator {
 
 	/** The properties. */

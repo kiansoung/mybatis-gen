@@ -9,10 +9,6 @@ import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.internal.DefaultShellCallback;
 
-/**
- * Hello world!
- *
- */
 public class App {
 	public static void main(String[] args) {
 		List<String> warnings = new ArrayList<String>();
