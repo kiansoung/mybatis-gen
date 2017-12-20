@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<context id="MyBatisGen" targetRuntime="MyBatis3">
+		<property name="javaFileEncoding" value="UTF-8" />
+		
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin">
+			<property name="suppressJavaInterface" value="false"/>
+		</plugin>
+		
+		<!-- @Repository 注解插件 -->
+		<plugin type="com.sandu.mybatisgen.plugin.DaoAnnotationsPlugin" />
+		
+		<!-- lombok 注解插件 -->
+		<plugin type="com.sandu.mybatisgen.plugin.LombokPlugin">
+			<property name="suppressGetterMethod" value="false"/>
+			<property name="suppressSetterMethod" value="false"/>
+		</plugin>
+		
+		<!-- 这里的type里写的是你的实现类的类全路径 -->
+		<commentGenerator type="com.sandu.mybatisgen.comment.DefaultCommentGenerator">
+			<property name="addRemarkComments" value="true"/>
+		</commentGenerator>
+
+		<!-- mysql配置 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.113:3306/app_online_30" 
+			userId="dev_modif"
+			password="U0J00l&amp;WzgYyWxN2" >
+			<property name="useInformationSchema" value="true"></property>
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		
+		<!-- dto class -->
+		<javaModelGenerator targetPackage="com.sandu.mybatisgen.dto"
+			targetProject="E:\Eclipse\Workspace\mybatis-gen\src\main\java\">
+			<property name="enableSubPackages" value="true" />
+<!-- 			<property name="trimStrings" value="true" /> -->
+		</javaModelGenerator>
+
+		<!-- mybatis xml file -->
+		<sqlMapGenerator targetPackage="com.sandu.mybatisgen.mapper"
+			targetProject="E:\Eclipse\Workspace\mybatis-gen\src\main\java\">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<!-- mapper class -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.sandu.mybatisgen.dao" 
+			targetProject="E:\Eclipse\Workspace\mybatis-gen\src\main\java\">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!--不生成帮助类（Exmaples） -->
+		<!--已生成的表 <table schema="demo" tableName="USER" domainObjectName="User"></table> -->
+		<table tableName="base_house" domainObjectName="BaseHouse" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="base_area" domainObjectName="BaseArea" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="base_house_apply" domainObjectName="BaseHouseApply" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="base_living" domainObjectName="BaseLiving" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="design_plan" domainObjectName="DesignPlan" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="design_plan_product" domainObjectName="DesignPlanProduct" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		       
+		<table tableName="design_templet" domainObjectName="DesignTemplet" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		<table tableName="design_templet_product" domainObjectName="DesignTempletProduct" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="house_space_new" domainObjectName="HouseSpaceNew" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="res_house_pic" domainObjectName="ResHousePic" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="res_model" domainObjectName="ResModel" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="res_pic" domainObjectName="ResPic" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="space_common" domainObjectName="SpaceCommon" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+		
+		<table tableName="sys_dictionary" domainObjectName="SysDictionary" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table> 
+		
+		<table tableName="base_product" domainObjectName="BaseProduct" 
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+		</table>
+	</context>
+</generatorConfiguration>
