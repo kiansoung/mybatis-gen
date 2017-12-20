@@ -1,9 +1,12 @@
 # mybatis-gen
 
 ## 注解插件 
-### com.sandu.mybatisgen.plugin.DaoAnnotationsPlugin
+### com.sandu.mybatisgen.comment.DefaultCommentGenerator
 ```xml
-<plugin type="com.sandu.mybatisgen.plugin.DaoAnnotationsPlugin" />
+<!-- 这里的type里写的是你的实现类的类全路径 -->
+<commentGenerator type="com.sandu.mybatisgen.comment.DefaultCommentGenerator">
+	<property name="addRemarkComments" value="true"/>
+</commentGenerator>
 ```
 ## lombok 注解插件 
 ### com.sandu.mybatisgen.plugin.LombokPlugin
