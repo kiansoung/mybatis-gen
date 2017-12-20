@@ -13,7 +13,13 @@
       suppressSetterMethod -> 是否支持Setter方法
     -->
     <plugin type="com.sandu.mybatisgen.plugin.LombokPlugin">
-			<property name="suppressGetterMethod" value="false"/>
-			<property name="suppressSetterMethod" value="false"/>
-		</plugin>
+	<property name="suppressGetterMethod" value="false"/>
+	<property name="suppressSetterMethod" value="false"/>
+    </plugin>
+```
+## Dao层的Repository注解插件
+### com.sandu.mybatisgen.plugin.DaoAnnotationsPlugin
+<!-- @Repository 注解插件 -->
+```xml
+<plugin type="com.sandu.mybatisgen.plugin.DaoAnnotationsPlugin" />
 ```
