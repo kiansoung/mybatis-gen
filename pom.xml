@@ -56,29 +56,4 @@
 		  <version>4.1.3.RELEASE</version>
 	  </dependency>
   </dependencies>
-  
-  <distributionManagement>
-        <repository>
-            <id>Releases</id>
-            <url>http://192.168.1.118:8081/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>Snapshots</id>
-            <url>http://192.168.1.118:8081/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>SanduDev</id>
-            <name>Sandu Public Repositories</name>
-            <url>http://192.168.1.118:8081/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 </project>
