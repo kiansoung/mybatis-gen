@@ -27,9 +27,9 @@
 
 		<!-- mysql配置 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://192.168.1.113:3306/app_online_30" 
-			userId="dev_modif"
-			password="U0J00l&amp;WzgYyWxN2" >
+			connectionURL="jdbc:mysql://ip:port/app_online_30" 
+			userId="username"
+			password="password" >
 			<property name="useInformationSchema" value="true"></property>
 		</jdbcConnection>
 
